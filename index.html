@@ -15,21 +15,22 @@
     <section id="chat">
         <h2>Ask Me Anything</h2>
         <p>Try *Grounding* or *Naming Feelings*—my 2007 crash shaped these.</p>
-        <script type="text/javascript">
-            (function(d, t) {
-    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-    v.onload = function() {
+       <script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
         window.voiceflow.chat.load({
-            verify: { projectID: '67cb9c6fa02773488a2d876f' },
-            url: 'https://runtime-api.voiceflow.com',
-            versionID: 'production'
+          verify: { projectID: '67cb9c6fa02773488a2d876f' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
         });
-    };
-    v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
-    v.type = "text/javascript";
-    s.parentNode.insertBefore(v, s);
-})(document, 'script');
-        </script>
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
     </section>
     <section id="podcasts">
         <h2>Free Podcasts</h2>
